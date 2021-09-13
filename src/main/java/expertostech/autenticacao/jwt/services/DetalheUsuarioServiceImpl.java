@@ -12,11 +12,11 @@ import expertostech.autenticacao.jwt.model.UsuarioModel;
 import expertostech.autenticacao.jwt.repository.UsuarioRepository;
 
 @Component
-public class DetalheUsuarioImpl implements UserDetailsService{
+public class DetalheUsuarioServiceImpl implements UserDetailsService{
 	
 	private final UsuarioRepository repository;
 
-	public DetalheUsuarioImpl(UsuarioRepository repository) {
+	public DetalheUsuarioServiceImpl(UsuarioRepository repository) {
 		super();
 		this.repository = repository;
 	}
